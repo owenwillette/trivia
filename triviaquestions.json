@@ -1,0 +1,42 @@
+[
+    {
+        "question": "Which document begins with the words 'We the People'?",
+        "options": ["The Bill of Rights", "The Declaration of Independence", "The Constitution of the United States", "The Emancipation Proclamation"],
+        "answer": 2
+    },
+    {
+        "question": "Who was the only U.S. President to serve more than two terms?",
+        "options": ["Franklin D. Roosevelt", "Theodore Roosevelt", "Abraham Lincoln", "Woodrow Wilson"],
+        "answer": 0
+    },
+    {
+        "question": "What was the main cause of the American Civil War?",
+        "options": ["Taxation without representation", "Disputes over slavery", "Westward expansion", "Trade policies with Europe"],
+        "answer": 1
+    },
+    {
+        "question": "In which year did the United States enter World War II?",
+        "options": ["1939", "1941", "1943", "1945"],
+        "answer": 1
+    },
+    {
+        "question": "Who wrote the Declaration of Independence?",
+        "options": ["James Madison", "Alexander Hamilton", "Thomas Jefferson", "Benjamin Franklin"],
+        "answer": 2
+    },
+    {
+        "question": "Which civil rights leader delivered the 'I Have a Dream' speech?",
+        "options": ["Malcolm X", "Martin Luther King Jr.", "Rosa Parks", "Thurgood Marshall"],
+        "answer": 1
+    },
+    {
+        "question": "The Harlem Renaissance was a cultural movement associated with which group?",
+        "options": ["Irish Americans", "African Americans", "Native Americans", "Italian Americans"],
+        "answer": 1
+    },
+    {
+        "question": "What is the longest river in the United States?",
+        "options": ["Mississippi River", "Missouri River", "Colorado River", "Ohio River"],
+        "answer": 1
+    }
+]
