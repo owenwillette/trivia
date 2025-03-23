@@ -1,4 +1,4 @@
-name: Run Haiku Script
+name: Run Trivia Bot
 
 on:
   schedule:
