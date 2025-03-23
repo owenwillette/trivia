@@ -27,4 +27,4 @@ jobs:
 
       - name: Execute Code
         run: | #Runs the script
-           python haiku_script/haiku_bot.py 
+           python triviabot.py
