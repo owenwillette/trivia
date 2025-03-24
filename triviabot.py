@@ -58,3 +58,29 @@ async def hint(ctx):
         await ctx.send(f"🧐 Hint: The correct answer starts with **{hint_letter}**")
     else:
         await ctx.send("No active question right now!")
+
+async def post_trivia_question():
+    await bot.wait_until_ready()
+    channel = bot.get_channel(https://discord.com/channels/1330021981487108219/1341066942907158569)
+    while not bot.is_closed():
+        global current_question, current_answer
+        current_question = random.choice(trivia_questions)
+        current_answer = current_question["answer"]
+        await channel.send(f"Trivia Question: {current_question['question']}")
+        await asyncio.sleep(3600)  # Post every hour
+
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+
+    if message.content.startswith('!answer'):
+        answer = message.content.split(' ', 1)[1]
+        if answer.lower() == current_question["options"][current_answer].lower():
+            await message.channel.send("Correct!")
+            scores[message.author.name] = scores.get(message.author.name, 0) + 1
+            await save_scores(scores)
+        else:
+            await message.channel.send("Incorrect. Try again!")
+
+    await bot.process_commands(message)
