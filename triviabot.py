@@ -55,7 +55,7 @@ async def leaderboard(ctx):
 async def hint(ctx):
     if current_question:
         hint_letter = current_question["options"][current_answer][0]  # First letter of the correct answer
-        await ctx.send(f"🧐 Hint: The correct answer starts with **{hint_letter}**")
+        await ctx.send(f"Hint: The correct answer starts with **{hint_letter}**")
     else:
         await ctx.send("No active question right now!")
 
@@ -84,3 +84,5 @@ async def on_message(message):
             await message.channel.send("Incorrect. Try again!")
 
     await bot.process_commands(message)
+    
+bot.loop.create_task(post_trivia_question())
