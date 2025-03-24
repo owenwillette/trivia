@@ -3,7 +3,13 @@ import json
 import random
 import asyncio
 import aiofiles
+import requests
 from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.message_content = True
+client = discord.Client(intents=intents)
+
 url = "https://raw.githubusercontent.com/owenwillette/trivia/refs/heads/main/triviaquestions.json"
 response = requests.get(url)
 trivia_questions = response.json()
